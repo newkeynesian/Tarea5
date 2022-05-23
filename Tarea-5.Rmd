@@ -1,0 +1,359 @@
+---
+output: 
+  pdf_document:
+    includes:
+      before_body: portada.tex
+      in_header: 
+    toc: true
+    number_sections: true
+    toc_depth: 3
+  tables: true
+include-before:
+- '`\newpage{}`{=latex}'
+toc-title: Contenido
+urlcolor: blue
+header-includes:
+- \usepackage[nottoc]{tocbibind}
+- \renewcommand{\listfigurename}{Lista de figuras}
+- \renewcommand{\listtablename}{Lista de tablas}
+- \usepackage[spanish]{babel}
+- \usepackage[spanish]{babel}\decimalpoint
+
+---
+
+\newpage
+
+\clearpage
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+set.seed(47499)
+macro <- "C:/Users/rault/Downloads/"
+setwd(macro)
+
+pacman::p_load(tidyverse,dplyr, readxl,
+               kableExtra, ggplot2, stargazer,gridExtra,ggfortify,psych,tempdisagg,xtable,tis)
+
+options(knitr.kable.NA = "-")
+
+
+
+```
+
+# Resuelva los ejercicios 12.2 y 12.3. Realice estos con ayuda de su laboratorista y entregue las soluciones a máquina, utilizando LaTeX. [2 horas, 2 puntos cada ejercicio]:
+
+## Ejercicio 12.2 
+
+### Considere un modelo en que el tiempo es discreto y los precios se muestran absolutamente insensibles ante una perturbación monetaria imprevista durante el primer periodo para volverse completamente flexibles a partir de ese momento. Supongamos que la curva IS es Y=c-ar y que la condición de equilibrio en el mercado de dinero es $m-p=b+hy$, donde y, m y p, son los logaritmos de la producción, la oferta de dinero y el nivel de precios, respectivamente; r, el tipo de interés real; i, el tipo de interés nominal; y a, h y k son parámetros positivos. Suponga que el valor inicial de m es constante a un nivel determinado, que normalizamos a cero, y que y es también constante en el nivel que le correspondería bajo el supuesto de precios flexibles, que también normalizamos a cero. Supongamos ahora que en un determinado periodo (el periodo 1, por simplificar) la autoridad monetaria pasa inesperadamente a practicar una política consistente en aumentar en cada periodo m en una cuantía g>0
+
+#### ¿Cuál sería el valor de r, inflación esperada, i y p antes de producirse el cambio en la política monetaria? 
+
+Como hemos supuesto un valor normalizado de 0 en la producción, tenemos lo siguiente
+$$
+0=c-ar
+$$
+Despejando para la tasa de interes real tenemos lo que sigue: 
+$$
+r_{0}=c/a
+$$
+Dado que el shock que se espera de política monetaria será constante, se espera también que el nivel de precios también sea constante, y por tanto la inflación esperada del periodo $t_0$ al periodo $t_1$ será:
+$$
+\pi^e= E_0[p_1]=0
+$$
+Por tanto, el valor del tipo de interés nomoinal i, siguiendo la ecuación de Fisher, estará dado por: 
+$$
+i_0=r_0=c/a=r_0
+$$
+Si sustituimos los valores para $m_0$ y $y_0$ en la ecuación del mercado de dinero, tenemos
+$$
+-p_o=b-k*i_0
+$$
+$$
+-p_0=b-k(c/a)
+$$
+$$
+p_0=kc/a-b
+$$
+#### Una vez que los precios se han ajustado por completo. Utilice este hecho para hallar los valores de las variables en el periodo 2. 
+
+Para $t_2$ tenemos que la economía se encuentra de nuevo en el nivel normalizado, es decir, 0. Sustituyéndolo en la ecuación de la curva IS tenemos lo siguiente:
+$$
+c-ar_2=0
+$$
+Despejando para r_2
+$$
+r_2=c/a
+$$
+Tomando el supuesto de que se espera que el nivel de precios aumente en el mismo monto que la oferta monetaria, la inflación que se espera para los periodos 2 y 3 es $g$, por lo que el i será el que sigue:
+$$
+i_2=r_2*\pi^2_2
+$$
+Sustituyéndolo en la ecuación tenemos lo que sigue:
+$$
+i_2=c/a + g
+$$
+De los supuestos tenemos que $m_2=2g$. Sustituyéndolo tenemos lo siguiente:
+$$
+2g-p_2=b-k*i_2
+$$
+Despejando el nivel de precios tenemos:
+$$
+p_2=kc/a+(k+2)g-b
+$$
+#### En el periodo 1, ¿cuáles son los valores de las variables entre el periodo 1 y el 2? 
+El nivel de precios en $t_1$ es el siguiente:
+$$
+p_1=kc/a-b
+$$
+La expectativa de la inflación para el periodo $t_1$ es:
+$$
+\pi^e_1=E[\frac{kc}{a}+(k+2)g-b]-\frac{kc}{a}+b
+$$
+El i estará definido como:
+$$
+i_1=r_1+(k+2)g
+$$
+La condición de equilibrio queda dada por:
+$$
+m_1-p_1=b+hc-har_1-ki_1
+$$
+Con el supuesto de que $m_1=g$ tenemos:
+$$
+g-\frac{kc}{a}+b=b+hc-har_1-kr_1+k(k+2)g
+$$
+
+Resolviendo para el interés real en $t_1$:
+$$
+r_1=\frac{hc-g+kc/a-k(k+2)g}{ha+k}
+$$
+El interés nominal será:
+$$
+i_1=\frac{hc-g+kc/a-k(k+2)g}{ha+k}+(k+2)g
+$$
+Simplificando:
+$$
+i_1=\frac{hc-g+kc/a+ha(k+2)g}{ha+k}
+$$
+#### ¿Qué es lo que determina que el efecto a corto plazo de la expansión monetaria sea un aumento o una reducción de i?
+La condición estará dada por:
+$$
+i_1-i_0=\frac{ha(k+2)g-g}{ha+k}<0
+$$
+Es decir, necesitamos que el efecto de la liquidez sea mayor al efecto esperado de la inflación. Esto implica que la tasa de interés real debe de caer más de lo que se espera que aumente la inflación. 
+
+## Ejercicio 12.3
+### Suponga, como en el Problema 12.2, que los precios son sensibles a las perturbaciones monetarias imprevistas durante un periodo y completamente flexibles a partir de ese momento. Suponga también que las expresiones se cumplen en cada periodo, mientras que, por el contrario, la oferta de dinero sigue un paseo aleatorio, donde ut es una perturbación no correlacionada cuya media es cero. Sea Et las expectativas en el periodo t. Explique por qué (...)
+
+Para que el nivel de precios cambie se requiere que $u_t$ sea distinto de 0. Sin embargo, dado que $E_t[u_{t+1}]=0$ no se espera que haya un cambio en el nivel de precios. 
+
+Dada la condición de equilibrio entonces podemos escribir lo siguiente:
+$$
+m_{t+1}-p_{t+1}=b+hy_{t+1}-kr_{t+1}-k(E_{t+1[p_{t+2}-p_{t+1}]})
+$$
+Si utilizamos el supuesto sobre $i_{t+1}$ y sacando expectativas tenemos que:
+$$
+E_tm_{t+1}-E_tp_{t+1}=b+hy^n-kr^n
+$$
+Esto implica que sus valores son iguales a sus valores de precios flexibles 
+
+#### Use el resultado del inciso a) para expresar a las variables en términos de m y de u 
+
+Partiendo de la última ecuación del inciso a y restándole $p_t$ en ambos lados, tenemos lo siguiente:
+$$
+E_tp_{t+1}-p_t=(m_t-p_t)-b-hy^n+kr^n
+$$
+Reduciendo términos:
+$$
+U_t=(m_t-p_t)-b-hy^n+kr^n
+$$
+Obteniendo la expresión para los precios de cada periodo tenemos:
+$$
+p_t=m_{t-1}-b-hy^n+kr^n
+$$
+Despejando $i_t$ de la condición de equilibrio:
+$$
+i_t=\frac{b+hy_t-(m_t-p_t)}{k}
+$$
+Despejando:
+$$
+(m_t-p_t)=u_t+b+hy^n+kr^n
+$$
+Luego, 
+$$
+i_t=\frac{h(y_t-y^n)+kr^n-u_t}{k}
+$$
+Resolviendo para $y_t$ 
+$$
+y_t=\frac{kc+a[hy^n-kr^n+(1-k)u_t]}{k+ah}
+$$
+Hallando la expresión para $r_t$
+$$
+r_t=\frac{kc+a[hy^n-kr^n+(1+k)u_t]}{k+ah}
+$$
+Hallando la expresión para $i_t$
+$$
+i_t=\frac{kc+a[hy^n-kr^n+(ah-1)u_t]}{k+ah}
+$$
+
+#### ¿Puede hablarse de un efecto Fisher en esta economía? Es decir, ¿se traducen los cambios en la inflación esperada en el tipo de interés nominal en la proporción uno a uno?
+
+De la ecuación de $i_t$, asumiendo que $u_t=\pi^e_t$, tenemos:
+
+$$
+i_t=\frac{kc+a[hy^n-kr^n+(ah-1)\pi^e_t]}{k+ah}
+$$
+De esta ecuación se observa que los cambios en la inflación esperada no se reflejan en la proporción indicada (uno a uno) en la tasa de interés nominal, por lo que los precios no responden completamente al choque de la oferta monetaria durante un periodo. 
+
+# Estudie la velocidad del dinero en México siguiendo estos pasos: [2 horas, 1.5 puntos cada inciso]. Por favor documente su trabajo para que se pueda replicar.
+
+## Obtenga datos de la cantidad de dinero de distintos tipos M0,M1,M2,M3,M4 en México y grafíquelos (en logaritmos), a frecuencia trimestral.
+
+```{r 4i,fig.cap="Agregados monetarios, 2000Q4-2022Q1", fig.pos='H'}
+setwd(macro)
+x <- read_csv("m0a4.csv")
+y <- ts(x, frequency = 4, start = c(2000,04))
+
+
+
+autoplot(log(y), facets = F)  + labs(colour = "",caption = "")
+
+
+```
+
+Podemos notar como el comportamiento de los agregados monetarios es en esencia el mismo que el de la base monetaria. Las expansiones de la base monetaria más grandes se dan de $M_0$ a $M_1$, y de $M_1$ a $M_2$. $M_3$ y $M_4$ fueron pracricamente iguales para el inicio del periodo, pero a partir de 2010 podemos ver un ligero incremento de $M_4$ que se explica por el incremento de los instrumentos monetarios en poder de no residentes.
+
+## Obtenga el PIB nominal, y calcule la cantidad real de dinero M0,M1, M2,M3,M4 en México y grafique las tasas de crecimiento de los distintos tipos de dinero, todo a frecuencia trimestral.
+
+En este inciso estaremos calculamos la cantidad de dinero real de la economía, tal que:
+
+$$
+\frac{M_i}{P}=\frac{Y}{V_i} 
+$$
+
+siendo $M_i$ el agregado monetario $i \in [0,1,2,3,4]$ y PY el pib nominal obtenido de INEGI. Para encontrar $\frac{M_i}{P}$ podemos deflactar los agregados monetarios. Pero para complementar el ejercicio también obtendremos la velocidad del dinero.
+
+
+```{r 4iia, fig.cap="Velocidad de los agregados monetarios, 2000Q4-2022Q1", fig.pos='H'}
+
+pib <- read_xls("pibcorriente.xls")
+pib <- ts(pib, frequency = 4, start = c(2000,01))
+
+v <- ts((pib[,1]/y)*1000, names = c("V0","V1", "V2","V3", "V4"),frequency = 4, start = c(2001,01))
+
+p1 <- autoplot(v, facets= F) + labs(colour = "",caption = "")
+
+inpc <- ts(read_xls("inpc.xls"),frequency = 12, start = c(1999,01))
+
+p <- tempdisagg::ta(inpc, conversion = "average", to = "quarterly")
+
+mp <- ts((y/p),frequency = 4, start = c(2001,01), names = c("M0","M1","M2","M3","M4"))
+tcmp <-ts(tis::growth.rate(mp,4), frequency = 4, start = c(2001,01))
+p2 <-  autoplot(tcmp, facets= F) + labs(colour = "",caption = "")
+
+grid.arrange(p1, p2)
+```
+En la primera gráfica podemos notar como la velocidad del dinero ha venido disminuyendo para todos los agregados monetarios. Otra característica importante es que la velocidad del dinero esta estrechamente relacionada con la liquidez, ya que sabemos que en términos de liquidez $M_0$ es más liquido que $M_1$ y así sucesivamente.
+
+Las tasas de crecimiento de los agregados monetarios se presenta en la segunda gráfica. Podemos notar dos cosas, que la tasa de crecimiento de los dos primero agregados monetarios ha sido superior a la de los últimos tres. Como se anticipó en la gráfica del inciso anterior, el comportamiento de $M_0$ es replicado muy de cerca por $M_1$, es por eso que la correlación entre ambas tasas es de 0.74 significativa al $99\%$. Otra cosa que llama la atención es que a medida que avanzamos en los agregados monetarios dependen menos de la base monetaria. Por ejemplo, la correlación entre $M_0$ y $M_4$ no es significativamente distinto de cero. 
+
+## Produzca una tabla de estadísticas descriptivas de las tasas de crecimiento de las distintas formas de dinero real, incluyendo medias y varianzas, para todo el periodo para el que tenga datos de cada variable.
+
+```{r 4iii, }
+
+
+vdt <- as.data.frame(x)
+
+tcvdt <- ((vdt - lag(vdt, 4))/lag(vdt, 4))*100
+
+tcvdt <- na.omit(ts(tcvdt, frequency = 4, start = c(2001,01)))
+
+
+  
+kbl(round(psych::describe(tcvdt),2), booktabs = T,  caption = "Estadisticas descriptivas") %>%
+kable_styling(position = "center",latex_options = c("striped", "hold_position"))
+ 
+
+```
+como era de esperarse, el agregado monetario con mayor volatilidad es el asociado a la base monetaria. De ahí en adelante, podemos decir que los agregados van capturando una fracción de la volatilidad, a excepción de $M_4$ que depende en mayor medida de la cantidad de moneda en manos de extranjeros. Otra cosa que resalta es que para todos los casos, y para todo el periodo hubo una tasa de crecimiento positiva, a pesar que hay dos recesiones importantes (2008 y 2020).
+
+
+## Explique en qué medida el dinero parece comportarse o no de acuerdo a la teoría económica, considerando la demanda de dinero como una función de la actividad económica, los precios y la tasa de interés.
+
+```{r 4iv, include=FALSE}
+inpc <-read_xls("inpc.xls")
+tcinpc <- ((inpc - lag(inpc,12))/lag(inpc,12))*100
+tcinpc <- ts(tcinpc, frequency = 12, start = c(1999,01))
+tcinpc <- tempdisagg::ta(tcinpc, conversion = "average", to = "quarterly")
+
+iv<- ts.union(tcinpc, tcmp)
+
+iv <- na.omit(iv)
+corstars <-function(x, method=c("pearson", "spearman"), removeTriangle=c("upper", "lower"),
+                     result=c("none", "html", "latex")){
+    #Compute correlation matrix
+    require(Hmisc)
+    x <- as.matrix(x)
+    correlation_matrix<-rcorr(x, type=method[1])
+    R <- correlation_matrix$r # Matrix of correlation coeficients
+    p <- correlation_matrix$P # Matrix of p-value 
+    
+    ## Define notions for significance levels; spacing is important.
+    mystars <- ifelse(p < .0001, "***", ifelse(p < .001, "*** ", ifelse(p < .01, "***  ", ifelse(p < .05, "**   ", "    "))))
+    
+    ## trunctuate the correlation matrix to two decimal
+    R <- format(round(cbind(rep(-1.11, ncol(x)), R), 2))[,-1]
+    
+    ## build a new matrix that includes the correlations with their apropriate stars
+    Rnew <- matrix(paste(R, mystars, sep=""), ncol=ncol(x))
+    diag(Rnew) <- paste(diag(R), " ", sep="")
+    rownames(Rnew) <- colnames(x)
+    colnames(Rnew) <- paste(colnames(x), "", sep="")
+    
+    ## remove upper triangle of correlation matrix
+    if(removeTriangle[1]=="upper"){
+      Rnew <- as.matrix(Rnew)
+      Rnew[upper.tri(Rnew, diag = TRUE)] <- ""
+      Rnew <- as.data.frame(Rnew)
+    }
+    
+    ## remove lower triangle of correlation matrix
+    else if(removeTriangle[1]=="lower"){
+      Rnew <- as.matrix(Rnew)
+      Rnew[lower.tri(Rnew, diag = TRUE)] <- ""
+      Rnew <- as.data.frame(Rnew)
+    }
+    
+    ## remove last column and return the correlation matrix
+    Rnew <- cbind(Rnew[1:length(Rnew)-1])
+    if (result[1]=="none") return(Rnew)
+    else{
+      if(result[1]=="html") print(xtable(Rnew), type="html")
+      else print(xtable(Rnew), type="latex") 
+    }
+} 
+
+
+xtable(corstars(iv))
+
+```
+
+Para este inciso tomaremos en cuenta la inflación, y veremos cual es la correlación que existe entre dicha variable y los agregados monetarios. La teoría dicta que a mayor tasa de crecimiento de los saldos monetarios reales mayor será el cambio en el nivel de precios. 
+
+\begin{table}[ht]
+\caption{Correlación}
+\centering
+\begin{tabular}{rlllll}
+  \hline
+ & $\pi$ & $\Delta\%\frac{M_0}{P}$ &$\Delta\%\frac{M_1}{P}$ & $\Delta\%\frac{M_2}{P}$ & $\Delta\%\frac{M_3}{P}$ \\ 
+  \hline
+$\pi$ &  &  &  &  &  \\ 
+  $\Delta\%\frac{M_0}{P}$ & 0.28***   &  &  &  &  \\ 
+  $\Delta\%\frac{M_1}{P}$ & 0.19     &  0.76*** &  &  &  \\ 
+ $\Delta\%\frac{M_2}{P}$ & 0.28**    &  0.33***   &  0.55*** &  &  \\ 
+  $\Delta\%\frac{M_3}{P}$ & 0.27**    &  0.41***  &  0.53*** &  0.91*** &  \\ 
+  $\Delta\%\frac{M_4}{P}$ & 0.23**    &  0.13     &  0.34***   &  0.71*** &  0.74*** \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+Lo interesante del ejercicio es que de acuerdo con la teoría la tasa de crecimiento de los agregados monetarios afecta de manera positiva a la inflación. Aunque de manera moderada, podemos confirmar que hay una relación contemporánea entre el nivel de saldos que mantienen las personas y los precios del mercado. De manera sorpresiva, el agregado monetario $M_1$ no guarda una relación significativa con la inflación. 
