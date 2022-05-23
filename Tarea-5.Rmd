@@ -27,13 +27,9 @@ header-includes:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
-set.seed(47499)
-macro <- "C:/Users/rault/Downloads/"
-setwd(macro)
 
 pacman::p_load(tidyverse,dplyr, readxl,
-               kableExtra, ggplot2, stargazer,gridExtra,ggfortify,psych,tempdisagg,xtable,tis)
-
+               kableExtra, ggplot2, stargazer,gridExtra,ggfortify,psych,tempdisagg,xtable,tis,readr)
 options(knitr.kable.NA = "-")
 
 
@@ -204,12 +200,232 @@ i_t=\frac{kc+a[hy^n-kr^n+(ah-1)\pi^e_t]}{k+ah}
 $$
 De esta ecuación se observa que los cambios en la inflación esperada no se reflejan en la proporción indicada (uno a uno) en la tasa de interés nominal, por lo que los precios no responden completamente al choque de la oferta monetaria durante un periodo. 
 
+# Estudie la inflación y la política monetaria en México siguiendo estos pasos: [2 horas, 1.5 puntos cada inciso]. Por favor documente su trabajo para que se pueda replicar.
+  
+## Obtenga datos de las inflaciones ANUALES general y subyacente  (del Índice Nacional de Precios al Consumidor) de México, por lo menos desde 1980, datos del desempleo a nivel nacional en México, y datos de la tasa de interés a corto plazo de México, todos a frecuencia MENSUAL, y grafíquelos individualmente.
+
+
+Los datos fueron obtenidos de fuentes oficiales, como lo son el Inegi y El Banco de México.
+
+```{r inf,out.height="220px", fig.cap="Inflación", fig.pos='H', fig.width=12, fig.height= 5}
+dat <- read_csv("datos2.csv") #Carga de la base de datos
+dat$fecha <- as.Date(dat$fecha, format = "%Y-%m-%d")
+ggplot(dat, aes(x= fecha, y = inf))+
+  geom_line(color = "forestgreen", size = 1.3)+ xlab("Periodo")+ ylab("Inflación %") + theme_bw() 
+```
+```{r suby,out.height="220px", fig.cap="Inflación subyacente", fig.pos='H', fig.width=12, fig.height= 5}
+
+dat %>% filter (fecha > "1984-01-01") %>% 
+  ggplot( aes(x= fecha, y = inf_suby))+
+  geom_line(color = "forestgreen", size = 1.5)+ xlab("Periodo")+ ylab("Inflación subyacente %") + theme_bw()
+```
+
+
+
+```{r desem,out.height="220px", fig.cap=" Tasa de desempleo", fig.pos='H', fig.width=12, fig.height= 5}
+
+dat %>% filter (fecha > "1984-12-01") %>% 
+  ggplot( aes(x= fecha, y = tasa_desem))+
+  geom_line(color = "forestgreen", size = 1.5)+ xlab("Periodo")+ ylab("Tasa de desempleo (%)") + theme_bw()
+```
+
+
+```{r cetes,out.height="220px", fig.cap=" tasa de Cetes a 28 días", fig.pos='H', fig.width=12, fig.height= 5}
+
+dat %>% filter (fecha > "1984-12-01") %>% 
+  ggplot( aes(x= fecha, y = cetes_28))+
+  geom_line(color = "forestgreen", size = 1.5)+ xlab("Periodo")+ ylab("Tasa de cetes a 28 días") + theme_bw()
+```
+
+
+
+## Produzca una tabla de estadísticas descriptivas de estos datos, incluyendo medias, varianzas y autocorrelaciones, para todo el periodo para el que tenga datos y para dos subperiodos, antes y después del año 1999.
+
+
+En la tabla \ref{tab:tab1} se muestran los principales estadísticos descriptivos de los datos. En dicha tabla, primero se muestran los datos para todo el periodo; después se presentan descriptivos para el periodo previo a 1999 así como para el periodo posterior.
+
+Los datos para todo el periodo son muy volátiles para todas las variables menos para el desempleo.Podemos destacar que se observa un nivel promedio de inflación alta, de un 22\% aproximadamente.
+
+Al analizar el periodo previo al 99 vemos que los datos son todavía más volátiles. El desempleo se mantuvo relativamente estable, pero la inflación fue mayor con un 35\% 
+
+En el periodo posterior a 1999 los estadísticos muestran varianzas y desviaciones más pequeñas, es decir, hubo menos volatilidad. También, el valor promedio de la inflación fue mucho menor, pasando a un nivel promedio de aproximadamente 5\%.
+
+Notemos pues, que para todos los cortes temporales, la tasa de los Cetes a 28 días se mantuvieron en niveles similares a la inflación, es decir, se ofrecían tasas altas, en promedio, previo al año 1999. Después de dicho periodo, las tasas del valor gubernamental bajaron considerablemente hasta un nivel promedio de 7\%-
+
+```{r}
+#Descritivos para todo el periodo
+dt <- dat %>% select(inf, inf_suby, tasa_desem, cetes_28) 
+Media <- as.double(unlist(lapply(dt, mean, na.rm = T)))
+Varianza <- as.double(unlist(lapply(dt, var, na.rm = T)))
+Desv. <- as.double(unlist(lapply(dt, sd, na.rm = T)))
+Max <- as.double(unlist(lapply(dt, max, na.rm = T)))
+Min <- as.double(unlist(lapply(dt, min, na.rm = T)))
+
+
+tab <- cbind(Media, Varianza, Desv. , Max, Min)
+rownames(tab) <- c( "Inflación", "Inflación subyacente", "Tasa de desempleo", "Cetes a 28 días")
+
+```
+
+
+```{r , message=FALSE}
+dt1 <- dat %>% filter(fecha < "1999-01-01") %>% 
+  select(inf, inf_suby, tasa_desem, cetes_28) 
+
+Media1 <- as.double(unlist(lapply(dt1, mean, na.rm = T)))
+Varianza1 <- as.double(unlist(lapply(dt1, var, na.rm = T)))
+Desv.1 <- as.double(unlist(lapply(dt1, sd, na.rm = T)))
+Max1 <- as.double(unlist(lapply(dt1, max, na.rm = T)))
+Min1 <- as.double(unlist(lapply(dt1, min, na.rm = T)))
+
+tab1 <- cbind(Media1, Varianza1, Desv.1 , Max1, Min1)
+rownames(tab1) <- c( "Inflación", "Inflación subyacente", "Tasa de desempleo", "Cetes a 28 días")
+colnames(tab1) <- c("Media", "Varianza", "Desv." , "Max", "Min")
+```
+
+
+
+```{r , message=FALSE}
+# Descriptivos posteriores a 1999
+dt2 <- dat %>% filter(fecha > "1999-01-01") %>% 
+  select(inf, inf_suby, tasa_desem, cetes_28) 
+
+Media2 <- as.double(unlist(lapply(dt2, mean, na.rm = T)))
+Varianza2 <- as.double(unlist(lapply(dt2, var, na.rm = T)))
+Desv.2 <- as.double(unlist(lapply(dt2, sd, na.rm = T)))
+Max2 <- as.double(unlist(lapply(dt2, max, na.rm = T)))
+Min2 <- as.double(unlist(lapply(dt2, min, na.rm = T)))
+
+
+tab2 <- cbind(Media2, Varianza2, Desv.2 , Max2, Min2)
+rownames(tab2) <- c( "Inflación", "Inflación subyacente", "Tasa de desempleo", "Cetes a 28 días")
+colnames(tab2) <- c("Media", "Varianza", "Desv." , "Max", "Min")
+
+```
+
+
+```{r tab1}
+tabf <- rbind(tab, tab1, tab2)
+rownames(tabf) <- NULL
+tabf <- as.data.frame(tabf)
+
+n <- c("Inflación", "Inflación subyacente", "Tasa de desempleo", "Cetes a 28 días","Inflación", "Inflación subyacente", "Tasa de desempleo", "Cetes a 28 días","Inflación", "Inflación subyacente", "Tasa de desempleo", "Cetes a 28 días")
+
+tabf <- cbind(n, tabf)
+tabf$Media <- as.double(tabf$Media)
+tabf$Varianza <- as.double(tabf$Varianza)
+tabf$Desv. <- as.double(tabf$Desv.)
+tabf$Max <- as.double(tabf$Max)
+tabf$Min <- as.double(tabf$Min)
+colnames(tabf) <- c("Periodo completo", "Media", "Varianza", "Desv." , "Max", "Min")
+
+
+kable(tabf[1:12, 1:6], booktabs = TRUE, digits  = 3, caption = "Estadísticas descriptiva") %>% kable_styling(latex_options = "HOLD_position") %>% 
+pack_rows("Periodo previo a 1999", 5, 9, indent = F) %>% pack_rows("Periodo posterior a 1999", 9, 12, indent = F)
+```
+
+Las siguientes figuras muestran el coeficiente de autocorrelación para cada una de las variables. Para un $lag=1$, la inflación, así como la inflación subyacente tienen una autocorrelación de 0.7 aproximadamente.La tasa de desempleo presenta una autocorrelacion de 0.75 aproximadamente, sin embargo, conforme aumenta el lag, la disminución de la autocorrelación es más lineal. La tasa de interés tiene un coeficiente de autocorrelación de 0.8.
+
+
+
+```{r b1, echo=FALSE, fig.pos='H', out.width="50%"}
+x <- dat %>% dplyr::select(3) %>% dplyr::filter(!row_number() %in% c(1:12,640))  
+x <- ts(x, frequency = 12, start = c(1970,01))
+
+acf(x, lag.max = NULL,
+    type = c("correlation", "covariance", "partial"),
+    plot = TRUE, na.action = na.fail, demean = TRUE)
+
+
+suby <- dat %>% dplyr::select(5) %>% dplyr::filter(!row_number() %in% c(1:168,640))  
+suby <- ts(suby, frequency = 12, start = c(1983,01))
+
+acf(suby, lag.max = NULL,
+    type = c("correlation", "covariance", "partial"),
+    plot = TRUE, na.action = na.fail, demean = TRUE)
+
+desem <- dat %>% dplyr::select(6) %>% dplyr::filter(!row_number() %in% c(1:192,640))  
+desem <- ts(desem, frequency = 12, start = c(1985,01))
+
+acf(desem, lag.max = NULL,
+    type = c("correlation", "covariance", "partial"),
+    plot = TRUE, na.action = na.fail, demean = TRUE)
+
+cetes28 <- dat %>% dplyr::select(8) %>% dplyr::filter(!row_number() %in% c(1:193,640))  
+cetes28 <- ts(cetes28, frequency = 12, start = c(1985,02))
+
+acf(cetes28, lag.max = NULL,
+    type = c("correlation", "covariance", "partial"),
+    plot = TRUE, na.action = na.fail, demean = TRUE)
+```
+
+## Una  ``regla de Taylor'' es una función que define a  la tasa de interés de corto plazo del periodo t en términos de la distancia entre la inflación y su objetivo y del desempleo y su objetivo en el periodo t-1 (y de una constante). Asuma que el objetivo de inflación es 3\% y tome el objetivo de desempleo como 3\% y estime los coeficientes de una regla de Taylor para México para tres grupos de datos: el periodo completo para el que tenga datos, y los dos sub-periodos definidos anteriormente. Estime las regresiones con la inflación general y con la subyacente. (John Taylor famosamente empezó por decir que era sólamente una relación empírica -- positiva --, y ya que se hizo famosa su regla, empezó a decir que debería usarse como regla para la determinación de la tasa de interés de política -- normativa.)**
+
+Se estimaron la siguientes regresiones:
+
+$$
+Cetes28 = \beta_{0}+\beta_{1}Br\pi + \beta_{2}BrU + u
+$$
+
+$$
+Cetes28 = \beta_{0}+\beta_{1}Br\pi_{s} + \beta_{2}BrU + u
+$$
+En donde $Cetes28$ se refiere a la tasas del valor gubernamental a 28 días, $Br\pi$ es la brecha en el objetivo de inflación, $Br\pi_{s}$ se refiere a la brecha usando la inflación subyacente y $BrU$ es la brecha de desempleo. Se estimo cada regresión para todo el periodo, el periodo previo a 1999 y el periodo posterior al mismo año.
+
+los resultados de la regresión, usando la inflación, se muestran en el cuadro 2; los resultados, al incluir la inflación subyacente, aparecen en el cuadro 3. 
+
+
+
+```{r brechas}
+dat <- dat %>% mutate(br_i = inf - 3, br_is = inf_suby - 3, br_d = tasa_desem - 3)
+dat1 <- dat %>% filter (fecha < "1999-01-01")
+dat2 <- dat %>% filter (fecha > "1999-01-01")
+
+```
+
+
+```{r regresiones}
+
+m1 <- lm(cetes_28~br_i+br_d, dat)
+m2 <- lm(cetes_28~br_i+br_d, dat1)
+m3 <- lm(cetes_28~br_i+br_d, dat2)
+
+m4 <- lm(cetes_28~br_is+br_d, dat)
+m5 <- lm(cetes_28~br_is+br_d, dat1)
+m6 <- lm(cetes_28~br_is+br_d, dat2)
+
+```
+
+```{r inf_n,results='asis'}
+
+stargazer(m1,m2,m3, dep.var.labels="Cetes a 28 días", title="Regla de Taylor",header = FALSE, omit.stat = c("f", "ser"), column.labels = c("Completo", "Antes de 1999", "Después de 1999"), covariate.labels = c("Brecha de inflación","Brecha de desempleo", "Constante"))
+```
+
+```{r inf_ss,results='asis'}
+
+stargazer(m4,m5,m6, dep.var.labels="Cetes a 28 días", title="Regla de Taylor usando inflación subyacente",header = FALSE, omit.stat = c("f", "ser"), column.labels = c("Completo", "Después de 1999", "Después de 1999"), covariate.labels = c("Brecha de inflación subyacente","Brecha de desempleo", "Constante"))
+```
+
+
+
+### Interprete los resultados de las regresiones, en general, y a la luz de la adopción en México de un régimen de objetivos de inflación en el año 1999. (En realidad, el objetivo de inflación, fue 3\% solamente a partir de 2003 cuando se volvió ''la meta permanente´´.)
+
+
+
+Al utilizar los datos para el periodo completo podemos destacar que lo predicho por Taylor se cumple, es decir, la brecha de inflación tiene un efecto positivo en la tasa de interés, pues un incremento porcentual de la brecha, produce un incremento del 0.7\% en la tasa de interés. Además, un incremento porcentual en la brecha de desempleo produce una caida del 0.6\% de la tasa de referencia.
+
+Si analizamos los resultados tomando solo datos previos a 1999 notamos que el efecto de la brecha de inflación en la tasa es similar. Sin embargo, hay que destacar el cambio en el signo del coeficiente de la brecha en el desempleo. Además el coeficiente es estadísticamente significativo solo a un nivel de confianza del 90\%. Estos resultados van en contra de la regla de Taylor, pues un aumento porcentual en la brecha de desempleo, generaría un incremento del 2\% en la tasa de referencia. 
+
+En el periodo posterior a 1999, cuando se establece el régimen de objetivos de inflación los coeficientes vuelven a ir en línea con la regla de Taylor. Además, ambos coeficientes son significativos para un nivel del confianza del 99\%. El coeficiente de la brecha de inflación es más grande que en los casos analizados previamente y muy cercando a 1 \footnote{Recordemos que según el principio de Taylor, la tasa de interés debe de aumentar, en términos porcentuales, más que la inflación para tener un efecto contracíclico.}. El coeficiente de la brecha de desempleo también aumento en términos absolutos, con un valor de -1.47.
+
+Al incluir la inflación subyacente en el análisis, las conclusiones no cambian en términos generales.
+
 # Estudie la velocidad del dinero en México siguiendo estos pasos: [2 horas, 1.5 puntos cada inciso]. Por favor documente su trabajo para que se pueda replicar.
 
 ## Obtenga datos de la cantidad de dinero de distintos tipos M0,M1,M2,M3,M4 en México y grafíquelos (en logaritmos), a frecuencia trimestral.
 
 ```{r 4i,fig.cap="Agregados monetarios, 2000Q4-2022Q1", fig.pos='H'}
-setwd(macro)
+
 x <- read_csv("m0a4.csv")
 y <- ts(x, frequency = 4, start = c(2000,04))
 
