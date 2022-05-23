@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.5)  23 MAY 2022 12:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.23)  23 MAY 2022 15:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -306,7 +306,7 @@ Package tocbibind Info: The document has section divisions on input line 50.
 Package tocbibind Note: Using section or other style headings.
 
 ) (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2022/04/30 3.74 The Babel package
+Package: babel 2022/05/22 3.75 The Babel package
 \babel@savecnt=\count285
 \U@D=\dimen162
 \l@unhyphenated=\language4
@@ -321,76 +321,113 @@ Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
 Package babel Info: Making > an active character on input line 722.
-)) (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+)) (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
+Package babel Info: Importing font and identification data for spanish
+(babel)             from babel-es.ini. Reported on input line 11.
+) (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2022/01/29 v0.5u Insert pages of external PDF documents (AM)
+(c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+) (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count288
+\calc@Bcount=\count289
+\calc@Adimen=\dimen163
+\calc@Bdimen=\dimen164
+\calc@Askip=\skip53
+\calc@Bskip=\skip54
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count290
+\calc@Cskip=\skip55
+) (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen165
+\ESO@tempdimb=\dimen166
+)
+\AM@pagewidth=\dimen167
+\AM@pageheight=\dimen168
+\AM@fboxrule=\dimen169
+(c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count291
+\AM@pagebox=\box52
+\AM@global@opts=\toks26
+\AM@pagecnt=\count292
+\AM@toc@title=\toks27
+\c@AM@survey=\count293
+\AM@templatesizebox=\box53
+) (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen163
-\lightrulewidth=\dimen164
-\cmidrulewidth=\dimen165
-\belowrulesep=\dimen166
-\belowbottomsep=\dimen167
-\aboverulesep=\dimen168
-\abovetopsep=\dimen169
-\cmidrulesep=\dimen170
-\cmidrulekern=\dimen171
-\defaultaddspace=\dimen172
-\@cmidla=\count288
-\@cmidlb=\count289
-\@aboverulesep=\dimen173
-\@belowrulesep=\dimen174
-\@thisruleclass=\count290
-\@lastruleclass=\count291
-\@thisrulewidth=\dimen175
+\heavyrulewidth=\dimen170
+\lightrulewidth=\dimen171
+\cmidrulewidth=\dimen172
+\belowrulesep=\dimen173
+\belowbottomsep=\dimen174
+\aboverulesep=\dimen175
+\abovetopsep=\dimen176
+\cmidrulesep=\dimen177
+\cmidrulekern=\dimen178
+\defaultaddspace=\dimen179
+\@cmidla=\count294
+\@cmidlb=\count295
+\@aboverulesep=\dimen180
+\@belowrulesep=\dimen181
+\@thisruleclass=\count296
+\@lastruleclass=\count297
+\@thisrulewidth=\dimen182
 ) (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip53
-\LTright=\skip54
-\LTpre=\skip55
-\LTpost=\skip56
-\LTchunksize=\count292
-\LTcapwidth=\dimen176
-\LT@head=\box52
-\LT@firsthead=\box53
-\LT@foot=\box54
-\LT@lastfoot=\box55
-\LT@gbox=\box56
-\LT@cols=\count293
-\LT@rows=\count294
-\c@LT@tables=\count295
-\c@LT@chunks=\count296
-\LT@p@ftn=\toks26
+\LTleft=\skip56
+\LTright=\skip57
+\LTpre=\skip58
+\LTpost=\skip59
+\LTchunksize=\count298
+\LTcapwidth=\dimen183
+\LT@head=\box54
+\LT@firsthead=\box55
+\LT@foot=\box56
+\LT@lastfoot=\box57
+\LT@gbox=\box58
+\LT@cols=\count299
+\LT@rows=\count300
+\c@LT@tables=\count301
+\c@LT@chunks=\count302
+\LT@p@ftn=\toks28
 ) (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen177
-\ar@mcellbox=\box57
-\extrarowheight=\dimen178
-\NC@list=\toks27
-\extratabsurround=\skip57
-\backup@length=\skip58
-\ar@cellbox=\box58
+\col@sep=\dimen184
+\ar@mcellbox=\box59
+\extrarowheight=\dimen185
+\NC@list=\toks29
+\extratabsurround=\skip60
+\backup@length=\skip61
+\ar@cellbox=\box60
 ) (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip59
-\multirow@cntb=\count297
-\multirow@dima=\skip60
-\bigstrutjot=\dimen179
+\multirow@colwidth=\skip62
+\multirow@cntb=\count303
+\multirow@dima=\skip63
+\bigstrutjot=\dimen186
 ) (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen180
-\WF@size=\dimen181
-\c@WF@wrappedlines=\count298
-\WF@box=\box59
-\WF@everypar=\toks28
+\wrapoverhang=\dimen187
+\WF@size=\dimen188
+\c@WF@wrappedlines=\count304
+\WF@box=\box61
+\WF@everypar=\toks30
 Package: wrapfig 2003/01/31  v 3.6
 ) (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count299
-\float@exts=\toks29
-\float@box=\box60
-\@float@everytoks=\toks30
-\@floatcapt=\box61
+\c@float@type=\count305
+\float@exts=\toks31
+\float@box=\box62
+\@float@everytoks=\toks32
+\@floatcapt=\box63
 ) (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
-\everycr=\toks31
-\minrowclearance=\skip61
+\everycr=\toks33
+\minrowclearance=\skip64
 ) (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/lscape.sty
@@ -401,36 +438,36 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box62
-\sift@deathcycles=\count300
-\@vwid@loff=\dimen182
-\@vwid@roff=\dimen183
+\@vwid@box=\box64
+\sift@deathcycles=\count306
+\@vwid@loff=\dimen189
+\@vwid@roff=\dimen190
 )
-\c@taburow=\count301
-\tabu@nbcols=\count302
-\tabu@cnt=\count303
-\tabu@Xcol=\count304
-\tabu@alloc=\count305
-\tabu@nested=\count306
-\tabu@target=\dimen184
-\tabu@spreadtarget=\dimen185
-\tabu@naturalX=\dimen186
-\tabucolX=\dimen187
-\tabu@Xsum=\dimen188
-\extrarowdepth=\dimen189
-\abovetabulinesep=\dimen190
-\belowtabulinesep=\dimen191
-\tabustrutrule=\dimen192
-\tabu@thebody=\toks32
-\tabu@footnotes=\toks33
-\tabu@box=\box63
-\tabu@arstrutbox=\box64
-\tabu@hleads=\box65
-\tabu@vleads=\box66
-\tabu@cellskip=\skip62
+\c@taburow=\count307
+\tabu@nbcols=\count308
+\tabu@cnt=\count309
+\tabu@Xcol=\count310
+\tabu@alloc=\count311
+\tabu@nested=\count312
+\tabu@target=\dimen191
+\tabu@spreadtarget=\dimen192
+\tabu@naturalX=\dimen193
+\tabucolX=\dimen194
+\tabu@Xsum=\dimen195
+\extrarowdepth=\dimen196
+\abovetabulinesep=\dimen197
+\belowtabulinesep=\dimen198
+\tabustrutrule=\dimen199
+\tabu@thebody=\toks34
+\tabu@footnotes=\toks35
+\tabu@box=\box65
+\tabu@arstrutbox=\box66
+\tabu@hleads=\box67
+\tabu@vleads=\box68
+\tabu@cellskip=\skip65
 ) (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box67
+\@tempboxb=\box69
 ) (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttablex/threeparttablex.sty
 Package: threeparttablex 2013/07/23 v0.3 by daleif
 (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
@@ -438,27 +475,27 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\TPTL@width=\skip63
+\TPTL@width=\skip66
 ) (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box68
-\UL@hyphenbox=\box69
-\UL@skip=\skip64
-\UL@hook=\toks34
-\UL@height=\dimen193
-\UL@pe=\count307
-\UL@pixel=\dimen194
-\ULC@box=\box70
+\UL@box=\box70
+\UL@hyphenbox=\box71
+\UL@skip=\skip67
+\UL@hook=\toks36
+\UL@height=\dimen256
+\UL@pe=\count313
+\UL@pixel=\dimen257
+\ULC@box=\box72
 Package: ulem 2019/11/18
-\ULdepth=\dimen195
+\ULdepth=\dimen258
 ) (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen196
-\c@nlinenum=\count308
-\TeXr@lab=\toks35
+\rotheadsize=\dimen259
+\c@nlinenum=\count314
+\TeXr@lab=\toks37
 ) (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count309
-\l__pdf_internal_box=\box71
+\l__color_backend_stack_int=\count315
+\l__pdf_internal_box=\box73
 ) (./Tarea-5.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
@@ -468,31 +505,31 @@ LaTeX Warning: Label `' multiply defined.
 )
 \openout1 = `Tarea-5.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
 (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 (c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 91.
+Package hyperref Info: Link coloring ON on input line 92.
 (./Tarea-5.out) (./Tarea-5.out)
 \@outlinefile=\write3
 \openout3 = `Tarea-5.out'.
@@ -531,12 +568,12 @@ Package hyperref Info: Link coloring ON on input line 91.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 91.
-LaTeX Info: Redefining \% on input line 91.
-<COLMEX.png, id=64, 491.9178pt x 148.6353pt>
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
+<COLMEX.png, id=68, 491.9178pt x 148.6353pt>
 File: COLMEX.png Graphic file (type png)
 <use COLMEX.png>
-Package pdftex.def Info: COLMEX.png  used on input line 97.
+Package pdftex.def Info: COLMEX.png  used on input line 98.
 (pdftex.def)             Requested size: 281.85974pt x 85.16525pt.
 [1
 
@@ -580,7 +617,7 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.17 ...recuencia trimestral.}{11}{subsection.3.2}
+l.17 ...recuencia trimestral.}{15}{subsection.3.2}
                                                   % [1])
 \tf@toc=\write4
 \openout4 = `Tarea-5.toc'.
@@ -588,163 +625,484 @@ l.17 ...recuencia trimestral.}{11}{subsection.3.2}
 [2] [3
 
 ] [4] [5]
-<Tarea-5_files/figure-latex/inf-1.pdf, id=170, 867.24pt x 361.35pt>
+<Tarea-5_files/figure-latex/inf-1.pdf, id=175, 867.24pt x 361.35pt>
 File: Tarea-5_files/figure-latex/inf-1.pdf Graphic file (type pdf)
 <use Tarea-5_files/figure-latex/inf-1.pdf>
-Package pdftex.def Info: Tarea-5_files/figure-latex/inf-1.pdf  used on input line 325.
+Package pdftex.def Info: Tarea-5_files/figure-latex/inf-1.pdf  used on input line 326.
 (pdftex.def)             Requested size: 469.75827pt x 195.7326pt.
-<Tarea-5_files/figure-latex/suby-1.pdf, id=171, 867.24pt x 361.35pt>
+<Tarea-5_files/figure-latex/suby-1.pdf, id=176, 867.24pt x 361.35pt>
 File: Tarea-5_files/figure-latex/suby-1.pdf Graphic file (type pdf)
 <use Tarea-5_files/figure-latex/suby-1.pdf>
-Package pdftex.def Info: Tarea-5_files/figure-latex/suby-1.pdf  used on input line 328.
+Package pdftex.def Info: Tarea-5_files/figure-latex/suby-1.pdf  used on input line 329.
 (pdftex.def)             Requested size: 469.75827pt x 195.7326pt.
 [6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.330 
+l.331 
        <./Tarea-5_files/figure-latex/inf-1.pdf>]
-<Tarea-5_files/figure-latex/desem-1.pdf, id=186, 867.24pt x 361.35pt>
+<Tarea-5_files/figure-latex/desem-1.pdf, id=191, 867.24pt x 361.35pt>
 File: Tarea-5_files/figure-latex/desem-1.pdf Graphic file (type pdf)
 <use Tarea-5_files/figure-latex/desem-1.pdf>
-Package pdftex.def Info: Tarea-5_files/figure-latex/desem-1.pdf  used on input line 332.
+Package pdftex.def Info: Tarea-5_files/figure-latex/desem-1.pdf  used on input line 333.
 (pdftex.def)             Requested size: 469.75827pt x 195.7326pt.
-<Tarea-5_files/figure-latex/cetes-1.pdf, id=187, 867.24pt x 361.35pt>
+<Tarea-5_files/figure-latex/cetes-1.pdf, id=192, 867.24pt x 361.35pt>
 File: Tarea-5_files/figure-latex/cetes-1.pdf Graphic file (type pdf)
 <use Tarea-5_files/figure-latex/cetes-1.pdf>
-Package pdftex.def Info: Tarea-5_files/figure-latex/cetes-1.pdf  used on input line 336.
+Package pdftex.def Info: Tarea-5_files/figure-latex/cetes-1.pdf  used on input line 337.
 (pdftex.def)             Requested size: 469.75827pt x 195.7326pt.
 [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.338 
+l.339 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.338 
+l.339 
        <./Tarea-5_files/figure-latex/suby-1.pdf> <./Tarea-5_files/figure-latex/desem-1.pdf>] [8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.397 
+l.398 
        <./Tarea-5_files/figure-latex/cetes-1.pdf>]
-<Tarea-5_files/figure-latex/b1-1.pdf, id=217, 469.755pt x 325.215pt>
+<Tarea-5_files/figure-latex/b1-1.pdf, id=222, 469.755pt x 325.215pt>
 File: Tarea-5_files/figure-latex/b1-1.pdf Graphic file (type pdf)
 <use Tarea-5_files/figure-latex/b1-1.pdf>
-Package pdftex.def Info: Tarea-5_files/figure-latex/b1-1.pdf  used on input line 406.
+Package pdftex.def Info: Tarea-5_files/figure-latex/b1-1.pdf  used on input line 407.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<Tarea-5_files/figure-latex/b1-2.pdf, id=218, 469.755pt x 325.215pt>
+<Tarea-5_files/figure-latex/b1-2.pdf, id=223, 469.755pt x 325.215pt>
 File: Tarea-5_files/figure-latex/b1-2.pdf Graphic file (type pdf)
 <use Tarea-5_files/figure-latex/b1-2.pdf>
-Package pdftex.def Info: Tarea-5_files/figure-latex/b1-2.pdf  used on input line 407.
+Package pdftex.def Info: Tarea-5_files/figure-latex/b1-2.pdf  used on input line 408.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<Tarea-5_files/figure-latex/b1-3.pdf, id=219, 469.755pt x 325.215pt>
+<Tarea-5_files/figure-latex/b1-3.pdf, id=224, 469.755pt x 325.215pt>
 File: Tarea-5_files/figure-latex/b1-3.pdf Graphic file (type pdf)
 <use Tarea-5_files/figure-latex/b1-3.pdf>
-Package pdftex.def Info: Tarea-5_files/figure-latex/b1-3.pdf  used on input line 408.
+Package pdftex.def Info: Tarea-5_files/figure-latex/b1-3.pdf  used on input line 409.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<Tarea-5_files/figure-latex/b1-4.pdf, id=220, 469.755pt x 325.215pt>
+<Tarea-5_files/figure-latex/b1-4.pdf, id=225, 469.755pt x 325.215pt>
 File: Tarea-5_files/figure-latex/b1-4.pdf Graphic file (type pdf)
 <use Tarea-5_files/figure-latex/b1-4.pdf>
-Package pdftex.def Info: Tarea-5_files/figure-latex/b1-4.pdf  used on input line 409.
+Package pdftex.def Info: Tarea-5_files/figure-latex/b1-4.pdf  used on input line 410.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
 
-Overfull \hbox (2.22104pt too wide) in paragraph at lines 406--410
+Overfull \hbox (2.22104pt too wide) in paragraph at lines 407--411
 [][] []
  []
 
 
-Overfull \hbox (2.22104pt too wide) in paragraph at lines 406--410
+Overfull \hbox (2.22104pt too wide) in paragraph at lines 407--411
 [] [] 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 424.
+(Font)              <12> on input line 425.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 424.
+(Font)              <8> on input line 425.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 424.
+(Font)              <6> on input line 425.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 424.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 425.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.66702pt
-(hyperref)                removed on input line 424.
+(hyperref)                removed on input line 425.
 
 [9
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.428 \[
+l.429 \[
          <./Tarea-5_files/figure-latex/b1-1.pdf> <./Tarea-5_files/figure-latex/b1-2.pdf> <./Tarea-5_files/figure-latex/b1-3.pdf> <./Tarea-5_files/figure-latex/b1-4.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 511.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 512.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.66702pt
-(hyperref)                removed on input line 511.
+(hyperref)                removed on input line 512.
 
 [10
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.519 
+l.520 
       ]
-Overfull \hbox (6.46527pt too wide) in paragraph at lines 550--550
+<ejercicio3.pdf, id=263, 597.50829pt x 845.0471pt>
+File: ejercicio3.pdf Graphic file (type pdf)
+<use ejercicio3.pdf>
+Package pdftex.def Info: ejercicio3.pdf  used on input line 542.
+(pdftex.def)             Requested size: 459.91869pt x 650.45619pt.
+File: ejercicio3.pdf Graphic file (type pdf)
+<use ejercicio3.pdf>
+Package pdftex.def Info: ejercicio3.pdf  used on input line 542.
+(pdftex.def)             Requested size: 459.91869pt x 650.45619pt.
+<ejercicio3.pdf, id=266, page=1, 597.50829pt x 845.0471pt>
+File: ejercicio3.pdf Graphic file (type pdf)
+<use ejercicio3.pdf, page 1>
+Package pdftex.def Info: ejercicio3.pdf , page1 used on input line 542.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: ejercicio3.pdf Graphic file (type pdf)
+<use ejercicio3.pdf, page 1>
+Package pdftex.def Info: ejercicio3.pdf , page1 used on input line 542.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+[11]
+File: ejercicio3.pdf Graphic file (type pdf)
+<use ejercicio3.pdf, page 1>
+Package pdftex.def Info: ejercicio3.pdf , page1 used on input line 542.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ejercicio3.pdf Graphic file (type pdf)
+<use ejercicio3.pdf, page 1>
+Package pdftex.def Info: ejercicio3.pdf , page1 used on input line 542.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ejercicio3.pdf Graphic file (type pdf)
+<use ejercicio3.pdf, page 1>
+Package pdftex.def Info: ejercicio3.pdf , page1 used on input line 542.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+[12 <./ejercicio3.pdf>]
+<ejercicio3.pdf, id=303, page=2, 597.50829pt x 845.0471pt>
+File: ejercicio3.pdf Graphic file (type pdf)
+<use ejercicio3.pdf, page 2>
+Package pdftex.def Info: ejercicio3.pdf , page2 used on input line 542.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ejercicio3.pdf Graphic file (type pdf)
+<use ejercicio3.pdf, page 2>
+Package pdftex.def Info: ejercicio3.pdf , page2 used on input line 542.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ejercicio3.pdf Graphic file (type pdf)
+<use ejercicio3.pdf, page 2>
+Package pdftex.def Info: ejercicio3.pdf , page2 used on input line 542.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+[13 <./ejercicio3.pdf>]
+<ejercicio3.pdf, id=326, page=3, 597.50829pt x 845.0471pt>
+File: ejercicio3.pdf Graphic file (type pdf)
+<use ejercicio3.pdf, page 3>
+Package pdftex.def Info: ejercicio3.pdf , page3 used on input line 542.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ejercicio3.pdf Graphic file (type pdf)
+<use ejercicio3.pdf, page 3>
+Package pdftex.def Info: ejercicio3.pdf , page3 used on input line 542.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ejercicio3.pdf Graphic file (type pdf)
+<use ejercicio3.pdf, page 3>
+Package pdftex.def Info: ejercicio3.pdf , page3 used on input line 542.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+[14 <./ejercicio3.pdf>]
+<ejercicio3.pdf, id=331, page=4, 597.50829pt x 845.0471pt>
+File: ejercicio3.pdf Graphic file (type pdf)
+<use ejercicio3.pdf, page 4>
+Package pdftex.def Info: ejercicio3.pdf , page4 used on input line 542.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ejercicio3.pdf Graphic file (type pdf)
+<use ejercicio3.pdf, page 4>
+Package pdftex.def Info: ejercicio3.pdf , page4 used on input line 542.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ejercicio3.pdf Graphic file (type pdf)
+<use ejercicio3.pdf, page 4>
+Package pdftex.def Info: ejercicio3.pdf , page4 used on input line 542.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+[15 <./ejercicio3.pdf>]
+Overfull \hbox (6.46527pt too wide) in paragraph at lines 553--553
 []\T1/lmr/bx/n/12 Obtenga da-tos de la can-ti-dad de di-ne-ro de dis-tin-tos ti-pos M0,M1,M2,M3,M4
  []
 
-<Tarea-5_files/figure-latex/4i-1.pdf, id=258, 469.755pt x 325.215pt>
+<Tarea-5_files/figure-latex/4i-1.pdf, id=336, 469.755pt x 325.215pt>
 File: Tarea-5_files/figure-latex/4i-1.pdf Graphic file (type pdf)
 <use Tarea-5_files/figure-latex/4i-1.pdf>
-Package pdftex.def Info: Tarea-5_files/figure-latex/4i-1.pdf  used on input line 554.
+Package pdftex.def Info: Tarea-5_files/figure-latex/4i-1.pdf  used on input line 557.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[11
-pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.556 \end{figure}
-                  ] [12
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.583 
-       <./Tarea-5_files/figure-latex/4i-1.pdf>]
-<Tarea-5_files/figure-latex/4iia-1.pdf, id=284, 469.755pt x 325.215pt>
+<Tarea-5_files/figure-latex/4iia-1.pdf, id=337, 469.755pt x 325.215pt>
 File: Tarea-5_files/figure-latex/4iia-1.pdf Graphic file (type pdf)
 <use Tarea-5_files/figure-latex/4iia-1.pdf>
-Package pdftex.def Info: Tarea-5_files/figure-latex/4iia-1.pdf  used on input line 584.
+Package pdftex.def Info: Tarea-5_files/figure-latex/4iia-1.pdf  used on input line 587.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 584--590
+Underfull \hbox (badness 10000) in paragraph at lines 587--593
 [][]
  []
 
-
-Overfull \hbox (6.57738pt too wide) in paragraph at lines 612--623
+[16
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.593 
+      ] [17
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.593 
+       <./Tarea-5_files/figure-latex/4i-1.pdf>]
+Overfull \hbox (6.57738pt too wide) in paragraph at lines 615--626
  [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[13 <./Tarea-5_files/figure-latex/4iia-1.pdf>] [14
+[18
 pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.668 \end{document}
-                    
+l.635 
+       <./Tarea-5_files/figure-latex/4iia-1.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./ej3.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<ej3.pdf, id=368, 614.295pt x 794.97pt>
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf>
+Package pdftex.def Info: ej3.pdf  used on input line 674.
+(pdftex.def)             Requested size: 469.75604pt x 607.9196pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./ej3.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf>
+Package pdftex.def Info: ej3.pdf  used on input line 674.
+(pdftex.def)             Requested size: 469.75604pt x 607.9196pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./ej3.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./ej3.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<ej3.pdf, id=371, page=1, 614.295pt x 794.97pt>
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 1>
+Package pdftex.def Info: ej3.pdf , page1 used on input line 674.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 1>
+Package pdftex.def Info: ej3.pdf , page1 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[19
 pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.668 \end{document}
-                    ] (./Tarea-5.aux
+l.674 \includepdf[pages={-}]{ej3.pdf}
+                                     ]
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 1>
+Package pdftex.def Info: ej3.pdf , page1 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 1>
+Package pdftex.def Info: ej3.pdf , page1 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 1>
+Package pdftex.def Info: ej3.pdf , page1 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[20 <./ej3.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./ej3.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<ej3.pdf, id=406, page=2, 614.295pt x 794.97pt>
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 2>
+Package pdftex.def Info: ej3.pdf , page2 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 2>
+Package pdftex.def Info: ej3.pdf , page2 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 2>
+Package pdftex.def Info: ej3.pdf , page2 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[21 <./ej3.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./ej3.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<ej3.pdf, id=411, page=3, 614.295pt x 794.97pt>
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 3>
+Package pdftex.def Info: ej3.pdf , page3 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 3>
+Package pdftex.def Info: ej3.pdf , page3 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 3>
+Package pdftex.def Info: ej3.pdf , page3 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[22 <./ej3.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./ej3.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<ej3.pdf, id=416, page=4, 614.295pt x 794.97pt>
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 4>
+Package pdftex.def Info: ej3.pdf , page4 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 4>
+Package pdftex.def Info: ej3.pdf , page4 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 4>
+Package pdftex.def Info: ej3.pdf , page4 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[23 <./ej3.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./ej3.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<ej3.pdf, id=421, page=5, 614.295pt x 794.97pt>
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 5>
+Package pdftex.def Info: ej3.pdf , page5 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 5>
+Package pdftex.def Info: ej3.pdf , page5 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 5>
+Package pdftex.def Info: ej3.pdf , page5 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[24 <./ej3.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./ej3.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<ej3.pdf, id=427, page=6, 614.295pt x 794.97pt>
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 6>
+Package pdftex.def Info: ej3.pdf , page6 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 6>
+Package pdftex.def Info: ej3.pdf , page6 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 6>
+Package pdftex.def Info: ej3.pdf , page6 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[25 <./ej3.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./ej3.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<ej3.pdf, id=433, page=7, 614.295pt x 794.97pt>
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 7>
+Package pdftex.def Info: ej3.pdf , page7 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 7>
+Package pdftex.def Info: ej3.pdf , page7 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 7>
+Package pdftex.def Info: ej3.pdf , page7 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[26 <./ej3.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./ej3.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<ej3.pdf, id=438, page=8, 614.295pt x 794.97pt>
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 8>
+Package pdftex.def Info: ej3.pdf , page8 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 8>
+Package pdftex.def Info: ej3.pdf , page8 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 8>
+Package pdftex.def Info: ej3.pdf , page8 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[27 <./ej3.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./ej3.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<ej3.pdf, id=443, page=9, 614.295pt x 794.97pt>
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 9>
+Package pdftex.def Info: ej3.pdf , page9 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 9>
+Package pdftex.def Info: ej3.pdf , page9 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 9>
+Package pdftex.def Info: ej3.pdf , page9 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[28 <./ej3.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./ej3.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<ej3.pdf, id=448, page=10, 614.295pt x 794.97pt>
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 10>
+Package pdftex.def Info: ej3.pdf , page10 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 10>
+Package pdftex.def Info: ej3.pdf , page10 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 10>
+Package pdftex.def Info: ej3.pdf , page10 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[29 <./ej3.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./ej3.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<ej3.pdf, id=453, page=11, 614.295pt x 794.97pt>
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 11>
+Package pdftex.def Info: ej3.pdf , page11 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 11>
+Package pdftex.def Info: ej3.pdf , page11 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 11>
+Package pdftex.def Info: ej3.pdf , page11 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[30 <./ej3.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./ej3.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<ej3.pdf, id=459, page=12, 614.295pt x 794.97pt>
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 12>
+Package pdftex.def Info: ej3.pdf , page12 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 12>
+Package pdftex.def Info: ej3.pdf , page12 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 12>
+Package pdftex.def Info: ej3.pdf , page12 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[31 <./ej3.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./ej3.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<ej3.pdf, id=464, page=13, 614.295pt x 794.97pt>
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 13>
+Package pdftex.def Info: ej3.pdf , page13 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 13>
+Package pdftex.def Info: ej3.pdf , page13 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 13>
+Package pdftex.def Info: ej3.pdf , page13 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[32 <./ej3.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./ej3.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<ej3.pdf, id=469, page=14, 614.295pt x 794.97pt>
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 14>
+Package pdftex.def Info: ej3.pdf , page14 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 14>
+Package pdftex.def Info: ej3.pdf , page14 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ej3.pdf Graphic file (type pdf)
+<use ej3.pdf, page 14>
+Package pdftex.def Info: ej3.pdf , page14 used on input line 674.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[33 <./ej3.pdf>] (./Tarea-5.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 )
@@ -752,21 +1110,21 @@ LaTeX Info: Redefining \% on input line 22.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Tarea-5.out' has not changed.
-(rerunfilecheck)             Checksum: 05F65708AF51F5B58BC69507C8B05164;24671.
+(rerunfilecheck)             Checksum: 45867E404854C6A4D7AF60E286F1125E;24740.
  ) 
 Here is how much of TeX's memory you used:
- 14294 strings out of 480242
- 239304 string characters out of 5891914
- 596614 words of memory out of 5000000
- 31888 multiletter control sequences out of 15000+600000
+ 15236 strings out of 480242
+ 256212 string characters out of 5891913
+ 611399 words of memory out of 5000000
+ 32782 multiletter control sequences out of 15000+600000
  525609 words of font info for 72 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,11n,77p,5596b,667s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}<c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi5.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr5.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on Tarea-5.pdf (15 pages, 382580 bytes).
+ 72i,17n,77p,5596b,676s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}<c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi5.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr5.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/rault/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
+Output written on Tarea-5.pdf (34 pages, 648805 bytes).
 PDF statistics:
- 387 PDF objects out of 1000 (max. 8388607)
- 314 compressed objects within 4 object streams
- 63 named destinations out of 1000 (max. 500000)
- 176 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 568 PDF objects out of 1000 (max. 8388607)
+ 431 compressed objects within 5 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 304 words of extra memory for PDF output out of 10000 (max. 10000000)
 

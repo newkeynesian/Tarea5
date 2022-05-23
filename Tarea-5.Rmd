@@ -18,7 +18,7 @@ header-includes:
 - \renewcommand{\listtablename}{Lista de tablas}
 - \usepackage[spanish]{babel}
 - \usepackage[spanish]{babel}\decimalpoint
-
+- \usepackage{pdfpages}
 ---
 
 \newpage
@@ -420,6 +420,8 @@ En el periodo posterior a 1999, cuando se establece el régimen de objetivos de 
 
 Al incluir la inflación subyacente en el análisis, las conclusiones no cambian en términos generales.
 
+\includepdf[pages={-}]{ejercicio3.pdf}
+
 # Estudie la velocidad del dinero en México siguiendo estos pasos: [2 horas, 1.5 puntos cada inciso]. Por favor documente su trabajo para que se pueda replicar.
 
 ## Obtenga datos de la cantidad de dinero de distintos tipos M0,M1,M2,M3,M4 en México y grafíquelos (en logaritmos), a frecuencia trimestral.
@@ -573,3 +575,7 @@ $\pi$ &  &  &  &  &  \\
 \end{table}
 
 Lo interesante del ejercicio es que de acuerdo con la teoría la tasa de crecimiento de los agregados monetarios afecta de manera positiva a la inflación. Aunque de manera moderada, podemos confirmar que hay una relación contemporánea entre el nivel de saldos que mantienen las personas y los precios del mercado. De manera sorpresiva, el agregado monetario $M_1$ no guarda una relación significativa con la inflación. 
+
+# Anexo
+
+\includepdf[pages={-}]{ej3.pdf}
